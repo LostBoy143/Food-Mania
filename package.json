@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tailwindcss build styles.css -o output.css",
+    "build": "tailwindcss build styles.css -o output.css public",
     "watch": "tailwindcss build styles.css -o output.css --watch"
   },
   "keywords": [],
