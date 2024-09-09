@@ -1,0 +1,21 @@
+{
+  "name": "foodMania",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tailwindcss build styles.css -o output.css",
+    "watch": "tailwindcss build styles.css -o output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.4"
+  }
+}

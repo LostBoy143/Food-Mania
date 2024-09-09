@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Food Mania</title>
+    <link href="output.css" rel="stylesheet" />
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <body class="text-gray-600 font-stylish">
+    <div class="grid md:grid-cols-5">
+      <!--content wrapper-->
+
+      <div
+        class="md:col-span-1 md:flex md:justify-end md:sticky md:top-0 md:z-10 md:h-screen h-14 fixed top-0 left-0 z-20 w-full bg-white"
+      >
+        <nav class="text-right bg-white">
+          <div
+            class="flex justify-between items-center"
+          >
+            <h1
+              class="font-bold uppercase p-4 border-b border-gray-100"
+            >
+              <a
+                href="/"
+                class="hover:text-grey-700"
+                >Food Mania</a
+              >
+            </h1>
+
+            <div
+              class="px-4 cursor-pointer md:hidden"
+              id="burger"
+            >
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <ul
+            class="text-sm mt-6  hidden md:block"
+            id="menu"
+          >
+            <li >
+              <a
+                href="#main"
+                class="px-4 py-2 pr-6 flex justify-end change" id="home" 
+                ><span>Home</span>
+                <svg
+                  class="w-5 ml-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li >
+              <a
+                href="#about-section"
+                class="px-4 py-2 pr-6 flex justify-end " id="about"
+                ><span>About</span>
+                <svg
+                  class="w-5 ml-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact-section"
+                class="px-4 py-2 pr-6 flex justify-end"  id="contact"
+                ><span>Contact</span>
+                <svg
+                  class="w-5 ml-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- End Nav-->
+
+      <main
+        class="md:px-16 px-8 py-6 bg-gray-100 md:col-span-4" id="main"
+      >
+        <div
+          class="flex justify-center md:justify-end gap-3 mb-4 mt-14 md:mt-5"
+        >
+          <a
+            href="login.html"
+            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+            >Log in</a
+          >
+          <a
+            href="signup.html"
+            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+            >Sign up</a
+          >
+        </div>
+        <header>
+          <h2
+            class="text-gray-700 text-6xl font-semibold"
+          >
+            Recipes
+          </h2>
+          <h3 class="text-2xl font-semibold">
+            For Foodies
+          </h3>
+        </header>
+        
+          <h4
+            class="font-bold mt-12 pb-2 border-b border-gray-200"
+          >
+            Latest Recipes
+          </h4>
+          <div
+            class="mt-8 grid lg:grid-cols-3 gap-10 sm " "
+          >
+            <!-- cards goes here-->
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/stew.jpg"
+                alt="stew"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >5 Bean Chilli Stew</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Mario</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 25 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/noodles.webp"
+                alt="noodles"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Veg Noodles</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Mario</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 25 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/curry.webp"
+                alt="curry"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Tofu Curry</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Mario</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 25 mins </span>
+              </div>
+            </div>
+          </div>
+          <div
+          class="mt-8  lg:grid-cols-3 gap-10 sm card-container hidden" id="card-container1"
+        >
+          <!-- cards goes here-->
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/lemon.jpg"
+              alt="stew"
+              class="h-32 sm:h-48 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Lemon Pound Cake</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Victor</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 20 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/quiche.jpg"
+              alt="noodles"
+              loading="lazy"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Breakfast quiche</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Martha</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 45 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/cheats-cheese-sauce.jpg"
+              alt="curry"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Cheat's Cheese Sause</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Grewr</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 30 mins </span>
+            </div>
+          </div>
+        </div>
+          <div class="flex justify-center">
+            <div
+              class="bg-secondary-100 mt-8 text-secondary-200 btn hover:shadow-inner md:hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            id="load-button1" >
+              Load more..
+            </div>
+          </div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most popular Recipes
+          </h4>
+          
+            
+            <div
+            class="mt-8 grid lg:grid-cols-3 gap-10 sm"
+          >
+            <!-- cards goes here-->
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/salad.webp"
+                alt="stew"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Cucumber Salad</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Staff Arthur</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 25 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/pizza.webp"
+                alt="noodles"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Fried Peach Pizza</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Chef John</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 30 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/fried.webp"
+                alt="curry"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Peach Fritters</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Chef John</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 30 mins </span>
+              </div>
+            </div>
+          </div>
+          <div
+          class="mt-8  lg:grid-cols-3 gap-10 sm card-container hidden" id="card-container2"
+        >
+          <!-- cards goes here-->
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/pancake.webp"
+              alt="stew"
+              loading="lazy"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Easy Pancakes</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Chris</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 45 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/brie.webp"
+              alt="noodles"
+              loading="lazy"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Baked Brie</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Martin</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 25 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/Mushroom-Pasta.webp"
+              alt="curry"
+              loading="lazy"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Mushroom Pasta</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Cicille</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 30 mins </span>
+            </div>
+          </div>
+        </div>
+          <div class="flex justify-center">
+            <div
+              class="bg-secondary-100 mt-8 text-secondary-200 btn hover:shadow-inner md:hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            id="load-button2" >
+              Load more..
+            </div>
+          </div>
+          <h4
+            class="font-bold mt-12 pb-2 border-b border-gray-200"
+          >
+       Indian Recipes </h4>
+          <div
+            class="mt-8 grid lg:grid-cols-3 gap-10 sm"
+          >
+            <!-- cards goes here-->
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/chana.jpg"
+                alt="stew"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Chana Masala</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Awasthi</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 30 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/dosa.jpg"
+                alt="noodles"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Masala Dosa</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Meenakshi</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 25 mins </span>
+              </div>
+            </div>
+            <div
+              class="card hover:shadow-xl cursor-pointer"
+            >
+              <img
+                src="images/paneer.jpg"
+                alt="curry"
+                class="h-32 sm:h-48 w-full object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"
+                  >Paneer Masala</span
+                >
+                <span
+                  class="block text-gray-500 text-sm"
+                  >Recipe by Ranveer</span
+                >
+              </div>
+              <div
+                class="badge flex items-center gap-1"
+              >
+                <svg
+                  class="w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span> 30 mins </span>
+              </div>
+            </div>
+          </div>
+          <div
+          class="mt-8  lg:grid-cols-3 gap-10 sm card-container hidden" id="card-container3"
+        >
+          <!-- cards goes here-->
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/samosa.jpg"
+              alt="stew"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Samosa</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Shubham Singh</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 30 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/butter-chicken.jpg"
+              alt="noodles"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Butter Chicken</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Gowtam</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 45 mins </span>
+            </div>
+          </div>
+          <div
+            class="card hover:shadow-xl cursor-pointer"
+          >
+            <img
+              src="images/palak.jpg"
+              alt="curry"
+              class="h-32 sm:h-48 w-full object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold"
+                >Palak Paneer</span
+              >
+              <span
+                class="block text-gray-500 text-sm"
+                >Recipe by Shruti</span
+              >
+            </div>
+            <div
+              class="badge flex items-center gap-1"
+            >
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span> 30 mins </span>
+            </div>
+          </div>
+        </div>
+          <div class="flex justify-center">
+            <div
+              class="bg-secondary-100 mt-8 text-secondary-200 btn hover:shadow-inner md:hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            id="load-button3" >
+              Load more..
+            </div>
+          </div>
+          <div class=" md:w-full mt-16 mb-11" id="about-section">
+            <h4
+            class="font-bold mt-12 pb-2 border-b text-3xl border-gray-200"
+          >About Us</h4>
+          <p class="mt-3 ">Welcome to foodMania—your ultimate culinary companion! Whether you're a seasoned chef or just starting your journey in the kitchen, foodMania is here to inspire your taste buds and expand your culinary horizons. Our platform brings together a diverse collection of recipes from around the globe, offering you the opportunity to explore new flavors, techniques, and traditions.
+
+            At foodMania, we believe that cooking should be an adventure, not a chore. That's why we've curated a user-friendly space where you can easily search for and discover recipes that suit your taste, dietary preferences, and cooking skill level. From the comfort foods you love to exotic dishes you've always wanted to try, foodMania has something for everyone.
+            
+            Join our community of food enthusiasts and start your culinary adventure today. With foodMania, the world is your kitchen!
+          
+          </p>
+          </div>
+      <!-- Contact Section -->
+<section id="contact-section" class="bg-gray-100 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-3xl font-extrabold ">Contact Us</h2>
+      <p class="mt-4 text-lg leading-6 text-gray-600">
+        Have questions or feedback? We'd love to hear from you!
+      </p>
+    </div>
+    <div class="mt-10 sm:mt-12">
+      <form action="#" method="POST" class="max-w-xl mx-auto">
+        <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+          <div>
+            <label for="name" class="sr-only">Full Name</label>
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="Full Name"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 rounded-md">
+          </div>
+          <div>
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 rounded-md">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 rounded-md"></textarea>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <button type="submit"
+            class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-gray-200  py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo or Website Name -->
+      <div class="text-xl font-bold ">
+        foodMania
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="mt-4 md:mt-0">
+        <ul class="flex space-x-6  items-center">
+          <li>
+            <a href="#" class=" mb-3">
+              <svg class="opacity-60 " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 30 30">
+                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+            </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="">
+              <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.676 0H1.324C.594 0 0 .593 0 1.324v21.352C0 23.407.594 24 1.324 24h11.494v-9.294H9.294V10.59h3.524V8.079c0-3.497 2.137-5.402 5.259-5.402 1.495 0 2.779.111 3.152.161v3.658l-2.165.001c-1.697 0-2.025.807-2.025 1.987v2.605h4.049l-.528 4.116H16.04V24h6.636c.73 0 1.324-.593 1.324-1.324V1.324C24 .593 23.407 0 22.676 0z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="">
+              <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.994 4.577a10.14 10.14 0 01-2.825.775A4.958 4.958 0 0023.338 3.5a10.004 10.004 0 01-3.126 1.195 4.924 4.924 0 00-8.384 4.489A13.978 13.978 0 011.671 3.15a4.923 4.923 0 001.524 6.57 4.903 4.903 0 01-2.23-.616v.062a4.927 4.927 0 003.946 4.827 4.946 4.946 0 01-2.224.084 4.928 4.928 0 004.6 3.417A9.873 9.873 0 010 19.54a13.931 13.931 0 007.548 2.212c9.058 0 14.01-7.507 14.01-14.01 0-.213-.005-.425-.014-.637a10.036 10.036 0 002.46-2.548l-.002-.002z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center md:text-left">
+      <p class="text-sm text-gray-400">&copy; 2024 foodMania. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  </main>
+  </div><!-- big container ends here -->
+       
+      
+  </body>
+</html>
